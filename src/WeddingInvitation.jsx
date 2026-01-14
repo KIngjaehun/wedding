@@ -1208,8 +1208,18 @@ const styles = {
   
   guestbookSection: { padding: '60px 24px', textAlign: 'center', backgroundColor: '#F7F4F1' },
   guestbookForm: { marginBottom: '32px' },
-  formRow: { display: 'flex', gap: '8px', marginBottom: '8px' },
-  formInput: { flex: 1, padding: '14px 16px', border: '1px solid #E0D5C8', borderRadius: '8px', fontSize: '14px', backgroundColor: '#FFF', outline: 'none' },
+  formRow: { display: 'flex', gap: '8px', marginBottom: '8px', width: '100%' },
+  formInput: { 
+    flex: 1, 
+    minWidth: 0,
+    padding: '14px 16px', 
+    border: '1px solid #E0D5C8', 
+    borderRadius: '8px', 
+    fontSize: '14px', 
+    backgroundColor: '#FFF', 
+    outline: 'none',
+    boxSizing: 'border-box',
+  },
   formTextarea: {
     width: '100%', padding: '14px 16px', border: '1px solid #E0D5C8', borderRadius: '8px',
     fontSize: '14px', backgroundColor: '#FFF', outline: 'none', resize: 'none',
